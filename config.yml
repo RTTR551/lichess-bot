@@ -1,24 +1,24 @@
-token: "xxxxxxxxxxxxxxxx"    # Lichess OAuth2 Token.
+token: "KewUNDgwyRb064dZ"    # Lichess OAuth2 Token.
 url: "https://lichess.org/"  # Lichess base URL.
 
 engine:                      # Engine settings.
-  dir: "./engines/"          # Directory containing engines, relative to this project.
-  name: "engine_name"        # Binary name of the engine to use.
+  dir: "./engines"          # Directory containing engines, relative to this project.
+  name: "stockfish14.exe"        # Binary name of the engine to use.
   protocol: "uci"            # "uci" or "xboard"
   ponder: true               # Think on opponent's time.
   polyglot:
     enabled: false           # Activate polyglot book.
     book:
       standard:              # List of book file paths for variant standard.
-        - engines/book1.bin
-        - engines/book2.bin
+        - Drawkiller_EloZoom_big.bin
+        - Goi5.1.bin
 #     atomic:                # List of book file paths for variant atomic.
 #       - engines/atomicbook1.bin
 #       - engines/atomicbook2.bin
 #     etc.
 #     Use the same pattern for 'giveaway' (antichess), 'crazyhouse', 'horde', 'kingofthehill', 'racingkings' and '3check' as well.
     min_weight: 1            # Does not select moves with weight below min_weight (min 0, max: 65535).
-    selection: "weighted_random" # Move selection is one of "weighted_random", "uniform_random" or "best_move" (but not below the min_weight in the 2nd and 3rd case).
+    selection: "best_move" # Move selection is one of "weighted_random", "uniform_random" or "best_move" (but not below the min_weight in the 2nd and 3rd case).
     max_depth: 8             # Half move max depth.
 # engine_options:            # Any custom command line params to pass to the engine.
 #   cpuct: 3.1
@@ -26,7 +26,7 @@ engine:                      # Engine settings.
 #   Hash: 256  
   uci_options:               # Arbitrary UCI options passed to the engine.
     Move Overhead: 100       # Increase if your bot flags games too often.
-    Threads: 2               # Max CPU threads the engine can use.
+    Threads: 4               # Max CPU threads the engine can use.
     Hash: 256                # Max memory (in megabytes) the engine can allocate.
 #   go_commands:             # Additional options to pass to the UCI go command.
 #     nodes: 1               # Search so many nodes only.
@@ -59,7 +59,7 @@ correspondence:
 challenge:                   # Incoming challenges.
   concurrency: 1             # Number of games to play simultaneously.
   sort_by: "best"            # Possible values: "best" and "first".
-  accept_bot: false          # Accepts challenges coming from other bots.
+  accept_bot: true       # Accepts challenges coming from other bots.
   only_bot: false            # Accept challenges by bots only.
   max_increment: 180         # Maximum amount of increment to accept a challenge. The max is 180. Set to 0 for no increment.
   min_increment: 0           # Minimum amount of increment to accept a challenge.
@@ -84,4 +84,4 @@ challenge:                   # Incoming challenges.
 #   - correspondence
   modes:                     # Game modes to accept.
     - casual                 # Unrated games.
-    - rated                  # Rated games - must comment if the engine doesn't try to win.
+#    - rated                  # Rated games - must comment if the engine doesn't try to win.
