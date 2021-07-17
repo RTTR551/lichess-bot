@@ -1,1 +1,1 @@
-web: bash startserver.sh
+worker: bash startserver.sh
