@@ -10,8 +10,8 @@ engine:                      # Engine settings.
     enabled: true         # Activate polyglot book.
     book:
       standard:              # List of book file paths for variant standard.
-       - Drawkiller_EloZoom_big.bin
        - gm.bin
+       - Drawkiller_EloZoom_big.bin
        - Ranomi.bin
 #     atomic:                # List of book file paths for variant atomic.
 #       - engines/atomicbook1.bin
