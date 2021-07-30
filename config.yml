@@ -7,10 +7,10 @@ engine:                      # Engine settings.
   protocol: "uci"            # "uci" or "xboard"
   ponder: true               # Think on opponent's time.
   polyglot:
-    enabled: false         # Activate polyglot book.
+    enabled: true         # Activate polyglot book.
     book:
       standard:              # List of book file paths for variant standard.
-#       - Drawkiller_EloZoom_big.bin
+       - Drawkiller_EloZoom_big.bin
 #     atomic:                # List of book file paths for variant atomic.
 #       - engines/atomicbook1.bin
 #       - engines/atomicbook2.bin
@@ -77,7 +77,7 @@ challenge:                   # Incoming challenges.
 #   - racingKings
 #   - threeCheck
   time_controls:             # Time controls to accept.
-    - bullet
+#   - bullet
     - blitz
     - rapid
     - classical
