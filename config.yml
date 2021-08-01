@@ -16,6 +16,13 @@ engine:                      # Engine settings.
        - Drawkiller_EloZoom_big.bin
        - Ranomi.bin
        - Titans.bin
+       - DC.bin
+       - final.bin
+       - gavibook.bin
+       - gavibooksmall.bin
+       - kiddy.bin
+       - wcc.bin
+      
 #     atomic:                # List of book file paths for variant atomic.
 #       - engines/atomicbook1.bin
 #       - engines/atomicbook2.bin
