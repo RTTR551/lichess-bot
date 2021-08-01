@@ -18,8 +18,6 @@ engine:                      # Engine settings.
        - Titans.bin
        - DC.bin
        - final.bin
-       - gavibook.bin
-       - gavibooksmall.bin
        - kiddy.bin
        - wcc.bin
       
