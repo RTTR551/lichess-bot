@@ -3,7 +3,7 @@ url: "https://lichess.org/"  # Lichess base URL.
 
 engine:                      # Engine settings.
   dir: "./engines"          # Directory containing engines, relative to this project.
-  name: "stockfish14m"        # Binary name of the engine to use.
+  name: "stockfish14"        # Binary name of the engine to use.
   protocol: "uci"            # "uci" or "xboard"
   ponder: true               # Think on opponent's time.
   polyglot:
@@ -12,7 +12,6 @@ engine:                      # Engine settings.
       standard:              # List of book file paths for variant standard.
        - Eman.bin
        - book.bin
-       - Eman1.bin
        - gm.bin
        - Drawkiller_EloZoom_big.bin
        - Ranomi.bin
