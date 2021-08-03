@@ -11,9 +11,10 @@ engine:                      # Engine settings.
     book:
       standard:              # List of book file paths for variant standard.
        - Eman.bin
+       - Titans.bin
        - 3300.bin
        - Eman1.bin
-       - Drawkiller_EloZoom_big.bin
+#      - Drawkiller_EloZoom_big.bin
 #      - book.bin
 #      - gm.bin
 #      - Ranomi.bin
