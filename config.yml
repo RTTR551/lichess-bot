@@ -10,7 +10,6 @@ engine:                      # Engine settings.
     enabled: true         # Activate polyglot book.
     book:
       standard:              # List of book file paths for variant standard.
-       - nn.bin
        - Eman.bin
        - Titans.bin
        - 3300.bin
