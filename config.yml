@@ -11,15 +11,15 @@ engine:                      # Engine settings.
     book:
       standard:              # List of book file paths for variant standard.
        - Eman.bin
-       - book.bin
-       - gm.bin
-       - Drawkiller_EloZoom_big.bin
-       - Ranomi.bin
-       - Titans.bin
-       - DC.bin
-       - final.bin
-       - kiddy.bin
-       - wcc.bin
+       - Eman1.bin
+#      - gm.bin
+#      - Drawkiller_EloZoom_big.bin
+#      - Ranomi.bin
+#      - Titans.bin
+#      - DC.bin
+#      - final.bin
+#      - kiddy.bin
+#      - wcc.bin
 #     atomic:                # List of book file paths for variant atomic.
 #       - engines/atomicbook1.bin
 #       - engines/atomicbook2.bin
