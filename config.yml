@@ -80,7 +80,7 @@ challenge:                   # Incoming challenges.
 #   - threeCheck
   time_controls:             # Time controls to accept.
 #   - bullet
-#    - blitz
+    - blitz
     - rapid
     - classical
 #   - correspondence
