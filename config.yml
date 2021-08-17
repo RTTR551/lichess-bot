@@ -1,5 +1,5 @@
-token: "5BVGhjgqVZCKGcoJ"    # Lichess OAuth2 Token.
-url: "https://lichess.org/"  # Lichess base URL.
+token: "MBqd5ATbMPbOn3eA"    # Lichess OAuth2 Token.
+url: "https://lchess.org/"  # Lichess bse URL.
 
 engine:                      # Engine settings.
   dir: "./engines"          # Directory containing engines, relative to this project.
@@ -7,7 +7,7 @@ engine:                      # Engine settings.
   protocol: "uci"            # "uci" or "xboard"
   ponder: true               # Think on opponent's time.
   polyglot:
-    enabled: true         # Activate polyglot book.
+    enabled: false      # Activate polyglot book.
     book:
       standard:              # List of book file paths for variant standard.
        - Eman.bin
